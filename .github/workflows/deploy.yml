@@ -76,7 +76,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1" # Using a widely compatible Ruby version
+          ruby-version: "3.2" # Using a widely compatible Ruby version
           bundler-cache: true
 
       - name: Setup Python 🐍
