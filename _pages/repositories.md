@@ -1,7 +1,7 @@
 ---
 layout: Repositories
 permalink: /repositories/
-title: My Github Projects
+title: Repositories
 description:
 nav: true
 nav_order: 4
