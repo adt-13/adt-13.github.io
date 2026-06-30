@@ -12,7 +12,7 @@
     "@vitejs/plugin-react": "latest",
     "vite": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
     "vite": "^5.0.0",
     "@vitejs/plugin-react": "^4.0.0"
   },
