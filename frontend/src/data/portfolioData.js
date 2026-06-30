@@ -1,0 +1,523 @@
+export const portfolioData = {
+  "profile": {
+    "name": "Adity Abdullah",
+    "role": "AI/ML Systems Developer",
+    "headline": "Embedded AI | Full-Stack Development | Practical AI Systems",
+    "location": "Dhaka, Bangladesh",
+    "email": "adt13abdullah@gmail.com",
+    "phone": "+8801700524081",
+    "github": "https://github.com/adt-13",
+    "linkedin": "https://www.linkedin.com/in/adityabdullah/",
+    "portfolio": "https://adt-13.github.io/",
+    "image": "/images/adity.jpg",
+    "summary": "I build practical systems that connect software engineering, machine learning, backend APIs, frontend interfaces, and hardware-aware AI deployment. My current work includes Make to Break, a project-based maker learning platform; a browser-based Arduino/electronics simulator engine; computer-vision Arduino experiments; and ECG-based arrhythmia detection using ANN/SNN approaches on ESP32-S3.",
+    "about": "I am a CSE student and early-career developer with a strong interest in AI systems, full-stack development, and embedded AI. I prefer building complete systems where backend APIs, frontend interfaces, simulation logic, machine learning workflows, and hardware-aware deployment decisions work together.",
+    "availability": "Open to internships, junior developer roles, research collaboration, and project-based opportunities."
+  },
+  "featuredProjectSlug": "make-to-break-platform",
+  "projects": [
+    {
+      "slug": "make-to-break-platform",
+      "title": "Make to Break — Project-Based Maker Learning Platform",
+      "shortTitle": "Make to Break Learning Platform",
+      "type": "Private Full-Stack SaaS-Style Product / Maker Education MVP",
+      "status": "MVP Built / In Development",
+      "visibilityType": "private",
+      "description": "A beginner-friendly maker learning platform that teaches electronics, Arduino, IoT, robotics, and Embedded AI through hands-on projects, tutorials, learner profiles, and gamified learning paths.",
+      "role": "I planned the product structure, designed the learning experience, built the frontend screens, implemented FastAPI backend endpoints, integrated Firebase authentication, modeled learner profiles, and prepared the seeded learning-path content.",
+      "problem": "Beginner makers often struggle because technical resources are either too theoretical, too advanced, or disconnected from real projects. Make to Break helps learners move from confusion to small practical wins by giving them a guided project journey.",
+      "approach": "I built the platform as a private-source MVP with separate public and member experiences. Public users can understand the platform idea, while authenticated learners can access a dashboard, tutorials, profile features, and structured project-based learning paths.",
+      "features": [
+        "Responsive maker-focused landing page and project categories",
+        "Firebase authentication for login, signup, and protected member access",
+        "Learner dashboard with learning cards, tutorial access, and progress-style UI",
+        "Profile management for learner details, skill level, education level, and preferred track",
+        "Structured tutorial browsing and beginner-friendly lesson pages",
+        "Embedded AI roadmap with worlds, missions, badges, and portfolio-proof learning ideas",
+        "FastAPI backend routes for homepage content, protected data, learner profiles, and learning paths"
+      ],
+      "tech": [
+        "FastAPI",
+        "Python",
+        "Firebase Authentication",
+        "SQLModel",
+        "REST APIs",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "SQLite / PostgreSQL-ready",
+        "Git"
+      ],
+      "architecture": [
+        "Public landing experience",
+        "Firebase auth flow",
+        "Protected learner dashboard",
+        "FastAPI service layer",
+        "Profile and learning-path models",
+        "Seeded lesson content",
+        "Future community and progress features"
+      ],
+      "screenshots": [
+        {
+          "title": "Landing Page Hero",
+          "caption": "Brand introduction with project-based learning message.",
+          "src": "/images/projects/make-to-break/hero-page.webp"
+        },
+        {
+          "title": "Authentication Flow",
+          "caption": "Login/sign-up experience for protected learner access.",
+          "src": "/images/projects/make-to-break/login.webp"
+        },
+        {
+          "title": "Learner Dashboard",
+          "caption": "Central member dashboard with learning activity and navigation.",
+          "src": "/images/projects/make-to-break/dashboard.webp"
+        },
+        {
+          "title": "Tutorial Library",
+          "caption": "Project/tutorial browsing experience for beginner learners.",
+          "src": "/images/projects/make-to-break/tutorials.webp"
+        },
+        {
+          "title": "Learner Profile",
+          "caption": "Editable learner profile with track and skill-level information.",
+          "src": "/images/projects/make-to-break/profile.webp"
+        },
+        {
+          "title": "Embedded AI Course Roadmap",
+          "caption": "Gamified course pathway for Embedded AI learning.",
+          "src": "/images/projects/make-to-break/course-roadmap.webp"
+        },
+        {
+          "title": "Lesson Experience",
+          "caption": "Single lesson page with beginner-friendly learning flow.",
+          "src": "/images/projects/make-to-break/lesson-page.webp"
+        }
+      ],
+      "caseStudy": {
+        "overview": "Make to Break is presented as a public case study instead of a public repository. The case study explains the product idea, user experience, technical architecture, and screenshots while keeping the private source code protected.",
+        "sourceNotice": "Source code is private because this is a product/MVP direction. Product screenshots, architecture, selected UI flows, and a technical explanation are shared instead.",
+        "sections": [
+          {
+            "title": "Product Goal",
+            "body": "The goal was to create a practical learning platform where beginners can learn by building, debugging, improving, and documenting small electronics and Embedded AI projects."
+          },
+          {
+            "title": "Learning Content System",
+            "body": "The platform includes seeded learning-path content, including an Embedded AI path designed as a world-based journey. Lessons are intentionally short so beginners can complete small wins and gradually move toward more advanced concepts."
+          },
+          {
+            "title": "Design Decisions",
+            "body": "I used a playful maker-style interface, colorful cards, badge-like elements, and project categories to make technical learning feel less intimidating. The public/member separation also keeps the platform ready for future membership or SaaS features."
+          },
+          {
+            "title": "Outcome",
+            "body": "The result is a working full-stack MVP that demonstrates product thinking, UI/UX design, authentication, API design, database modeling, and educational content architecture without requiring the source code to be public."
+          }
+        ],
+        "nextSteps": [
+          "Add real project submissions and portfolio-proof uploads",
+          "Build progress tracking and saved lesson completion states",
+          "Add admin tools for managing tutorials and learning paths",
+          "Connect the learning platform with the electronics simulation engine",
+          "Prepare a short demo video for the public portfolio page"
+        ]
+      }
+    },
+    {
+      "slug": "electronics-simulation-engine",
+      "title": "Make to Break Arduino Simulator — Electronics Simulation Engine",
+      "shortTitle": "Arduino Electronics Simulator",
+      "type": "Private EdTech Tool / Browser-Based Simulator Engine MVP",
+      "status": "In Development",
+      "visibilityType": "private",
+      "description": "A browser-based Arduino learning simulator that combines a code editor, real Arduino compilation, AVR simulation, visual Arduino Uno and breadboard components, beginner lessons, and code-checking feedback. It is currently an MVP and will later grow into a more professional electronics simulation engine.",
+      "role": "I am designing and building the simulator as an in-progress product component. My work includes the React/TypeScript interface, lesson flow, draggable simulator canvas, Arduino code editor, compile-and-run pipeline, AVR8js integration, virtual input/output behavior, beginner-friendly error feedback, and the future wiring/simulation roadmap.",
+      "problem": "Beginners often struggle with Arduino because they need hardware, correct wiring, IDE setup, compiler errors, and debugging confidence before they can even enjoy building. A learning platform needs a safe simulator where students can write code, run it, see hardware-like feedback, and make mistakes without damaging components.",
+      "approach": "I started with a focused MVP instead of trying to build a full circuit solver immediately. The current version proves the core learning loop: choose a lesson, edit Arduino C/C++ code, compile it through a backend using Arduino CLI, run the generated HEX inside AVR8js, and reflect pin behavior visually on an Arduino Uno and breadboard-style canvas. The simulator is intentionally designed as a foundation that can later support wiring, more components, circuit graphs, and deeper simulation logic.",
+      "features": [
+        "Monaco-based Arduino code editor with sketch.ino-style editing",
+        "Node/Express compiler backend that compiles sketches with Arduino CLI",
+        "AVR8js-based Arduino Uno runtime for browser-side simulation",
+        "Visual Arduino Uno, breadboard, LED, resistor, and push-button interface",
+        "Live D13 LED state and virtual D2 push-button input behavior",
+        "Draggable board and breadboard components for a more interactive simulator feel",
+        "Lesson picker for beginner Arduino missions such as Wake Up, Engineer, Make It Blink, and Button Power",
+        "Check My Code system with lesson-specific validation and beginner-friendly compiler hints",
+        "Resizable editor, simulator, output, and information panels",
+        "Private-source case study presentation for a product that is still under active development"
+      ],
+      "tech": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Monaco Editor",
+        "AVR8js",
+        "Arduino CLI",
+        "Node.js",
+        "Express",
+        "Wokwi Elements",
+        "C/C++ Arduino",
+        "Custom Lesson Validation"
+      ],
+      "architecture": [
+        "React simulator UI",
+        "Monaco code editor",
+        "Arduino CLI compile API",
+        "HEX output",
+        "AVR8js runtime",
+        "Virtual pin state mapping",
+        "Visual board/breadboard layer",
+        "Lesson validation and feedback"
+      ],
+      "screenshots": [
+        {
+          "title": "Lesson 1 Simulator Workspace",
+          "caption": "The beginner workspace combines an Arduino code editor, run/check controls, simulator canvas, Arduino Uno, breadboard, LED, and output panel.",
+          "src": "/images/projects/electronics-simulator/lesson-1-workspace.webp"
+        },
+        {
+          "title": "Button Power Lesson",
+          "caption": "A later lesson introduces input behavior with a virtual push button on pin 2 and output control through the LED on pin 13.",
+          "src": "/images/projects/electronics-simulator/button-power-lesson.webp"
+        }
+      ],
+      "caseStudy": {
+        "overview": "This project is presented as an in-progress technical case study. The current simulator is not marketed as a complete professional circuit engine yet; it is the foundation for one. The case study focuses on the product direction, working simulation loop, UI architecture, learning experience, and future engine roadmap while keeping the source code private.",
+        "sourceNotice": "Source code is private because this is part of a product direction and is still under active development. Screenshots, architecture, technical explanation, and progress updates are shared instead.",
+        "sections": [
+          {
+            "title": "Current MVP Scope",
+            "body": "The current version focuses on Arduino Uno beginner lessons, code editing, compiling, simulation, pin-state visualization, and lesson validation. It is intentionally scoped so the core code-to-hardware-feedback loop works before adding a larger component library or full circuit solving system."
+          },
+          {
+            "title": "Simulation Loop",
+            "body": "When the user clicks Run, the frontend sends the Arduino sketch to a local compiler server. The backend compiles the sketch using Arduino CLI and returns the generated HEX file. The frontend loads that HEX into AVR8js, steps the simulated CPU, and maps the resulting port state to visual hardware feedback such as the D13 LED indicator."
+          },
+          {
+            "title": "Learning Experience",
+            "body": "The simulator is built for absolute beginners. Lessons are short, mission-based, and include starter code, expected results, debugging hints, upgrade quests, and proof prompts. The Check My Code feature validates both compilation and lesson-specific requirements so learners get helpful feedback instead of raw compiler confusion."
+          },
+          {
+            "title": "Honest Development Status",
+            "body": "The project is still evolving. The Arduino board and Wokwi-style elements are currently used as the visual layer, while the simulation behavior is centered on Arduino code execution and selected digital pin states. The next major direction is a real wiring system, stronger circuit representation, and a more professional simulator engine structure."
+          },
+          {
+            "title": "Why This Matters",
+            "body": "This project shows product thinking beyond a normal tutorial app. It combines UI design, compiler integration, runtime simulation, beginner education design, and hardware-aware logic into one platform direction that can later connect with Make to Break learning paths."
+          }
+        ],
+        "nextSteps": [
+          "Build a click-to-wire system between Arduino pins, component legs, and breadboard holes",
+          "Create an internal circuit graph representation for connected components",
+          "Add more components such as external LEDs, buzzers, sensors, motors, and displays",
+          "Improve the simulation engine beyond selected pin-state visualization",
+          "Add lesson progress tracking and connection with the Make to Break platform",
+          "Prepare a short demo video or GIF for the public portfolio case study",
+          "Add a professional architecture diagram showing frontend, compiler backend, AVR runtime, and simulator canvas"
+        ]
+      }
+    },
+    {
+      "slug": "cardiac-arrhythmia-detection-esp32-s3",
+      "title": "Comparative Analysis of ANN and SNN for ECG-Based Arrhythmia Detection on ESP32-S3",
+      "shortTitle": "Low-Power Cardiac Arrhythmia Detection on ESP32-S3",
+      "type": "Academic Research / Defense Project",
+      "status": "Ongoing",
+      "visibilityType": "private",
+      "description": "A research-based embedded AI project comparing Artificial Neural Networks and Spiking Neural Networks for ECG-based arrhythmia detection on low-power hardware.",
+      "role": "I am working on the model comparison, ECG signal classification pipeline, embedded deployment feasibility, and evaluation plan for accuracy, latency, memory usage, and computational efficiency.",
+      "problem": "Many biomedical AI models work well on powerful machines but are difficult to deploy on small, low-power devices. This project explores whether ANN and SNN approaches can support practical ECG arrhythmia detection on ESP32-S3-class hardware.",
+      "approach": "The project is structured around a comparative study. ANN models are used as a conventional baseline, while SNN models are explored for low-power, event-driven computation. The case study focuses on both model performance and embedded feasibility.",
+      "features": [
+        "ANN vs SNN model comparison",
+        "ECG signal processing and arrhythmia classification workflow",
+        "Accuracy, latency, memory, and efficiency-focused evaluation",
+        "ESP32-S3 deployment feasibility study",
+        "Research direction toward a publishable academic paper"
+      ],
+      "tech": [
+        "Python",
+        "Deep Learning",
+        "SNN",
+        "ANN",
+        "ECG Signal Processing",
+        "ESP32-S3",
+        "Embedded AI"
+      ],
+      "architecture": [
+        "ECG data preparation",
+        "Signal preprocessing",
+        "ANN/SNN model experimentation",
+        "Performance comparison",
+        "Embedded deployment feasibility review"
+      ],
+      "caseStudy": {
+        "overview": "This page is designed as a public case study instead of a source-code repository because the project is part of an academic defense and ongoing research work.",
+        "sourceNotice": "Source code is private due to academic defense and research confidentiality. Methodology, architecture, screenshots, and results summary can be shared when appropriate.",
+        "nextSteps": [
+          "Finalize the experiment setup and evaluation metrics",
+          "Prepare clean visual diagrams for the portfolio case study",
+          "Document model comparison results after defense work progresses",
+          "Add a short demo or result summary without exposing private code"
+        ]
+      }
+    },
+    {
+      "slug": "movie-recommendation-system",
+      "title": "Hybrid Movie Recommendation System",
+      "shortTitle": "Movie Recommendation System",
+      "type": "Public Machine Learning / Recommendation System Project",
+      "status": "Completed",
+      "visibilityType": "public",
+      "description": "A Streamlit-based movie recommender built on the MovieLens dataset. It includes content-based recommendations using TF-IDF and cosine similarity, plus a hybrid version that combines collaborative filtering with genre similarity.",
+      "role": "I prepared the MovieLens data, built the Streamlit interface, implemented TF-IDF feature extraction and cosine-similarity recommendation logic, added TMDB poster fetching, and experimented with a hybrid recommendation model using SVD-based collaborative filtering.",
+      "problem": "Users often need help discovering movies similar to what they already like. This project explores how recommendation systems can use movie metadata and user-rating behavior to generate relevant suggestions.",
+      "approach": "The main app processes movie genres with TF-IDF and computes similarity using a cosine-similarity-style linear kernel. When a user selects a movie, the app returns similar movies and fetches posters from TMDB. A second hybrid model combines collaborative filtering from user ratings with content-based genre similarity to recommend movies for selected user IDs.",
+      "features": [
+        "Streamlit web interface for interactive movie selection",
+        "MovieLens dataset loading and preprocessing",
+        "TF-IDF vectorization of movie genres",
+        "Cosine-similarity-based recommendation ranking",
+        "Popularity filtering to keep recommendations more reliable",
+        "TMDB API poster fetching for visual recommendation cards",
+        "Hybrid experiment combining SVD collaborative filtering and content-based similarity",
+        "Evaluation script using RMSE, MAE, confusion matrix, ROC curve, and AUC"
+      ],
+      "tech": [
+        "Python",
+        "Streamlit",
+        "Pandas",
+        "scikit-learn",
+        "TF-IDF",
+        "Cosine Similarity",
+        "Surprise SVD",
+        "TMDB API",
+        "MovieLens Dataset",
+        "Recommendation Systems"
+      ],
+      "architecture": [
+        "MovieLens data loading",
+        "Genre text preprocessing",
+        "TF-IDF feature matrix",
+        "Cosine similarity ranking",
+        "Recommendation selection",
+        "TMDB poster fetching",
+        "Streamlit result display"
+      ],
+      "links": {
+        "github": "https://github.com/adt-13/movie-recommendation-system",
+        "linkedin": "https://www.linkedin.com/posts/adityabdullah_here-is-the-final-version-of-my-movie-recommendation-ugcPost-7351671877745983488-QnSh/"
+      },
+      "caseStudy": {
+        "overview": "This project demonstrates a practical recommendation-system workflow: data preparation, feature extraction, similarity calculation, interactive UI, and model evaluation. The portfolio explanation should call it a recommendation-system project rather than only a general ML project.",
+        "sourceNotice": "Public source code is available on GitHub.",
+        "sections": [
+          {
+            "title": "Recommendation Logic",
+            "body": "The content-based part converts movie genres into numerical TF-IDF features and compares movies using cosine similarity. This allows the system to recommend movies that share similar genre patterns with the selected title."
+          },
+          {
+            "title": "Hybrid Extension",
+            "body": "The hybrid experiment adds collaborative filtering through an SVD model trained on user ratings. It combines predicted user preference with content similarity, creating a stronger recommendation idea than using genre similarity alone."
+          },
+          {
+            "title": "User Experience",
+            "body": "The Streamlit interface keeps the project simple and demo-friendly. A user can select a movie, click the recommendation button, and view suggested movies with poster images."
+          }
+        ],
+        "nextSteps": [
+          "Move the TMDB API key into an environment variable before production deployment",
+          "Clean the requirements file so only necessary packages are listed",
+          "Unify the content-based and hybrid versions into one final app flow",
+          "Add screenshots or a short GIF demo for the portfolio page",
+          "Add more evaluation notes comparing content-based and hybrid recommendations"
+        ]
+      }
+    },
+    {
+      "slug": "face-controlled-led-arduino",
+      "title": "Face-Controlled LED Arduino System",
+      "shortTitle": "Face-Controlled LED Arduino",
+      "type": "Public Computer Vision + Embedded Systems Project",
+      "status": "Completed Prototype",
+      "visibilityType": "public",
+      "description": "A webcam-based Arduino prototype where facial movement controls two LEDs. The Python computer-vision layer tracks the nose position with MediaPipe and sends serial commands to Arduino to switch the left or right LED.",
+      "role": "I built the Python computer-vision control script, wrote the Arduino sketch for serial command handling, connected the hardware output logic, and prepared the public GitHub repository with setup instructions and demo material.",
+      "problem": "Most beginner Arduino projects are controlled by buttons or simple sensors. I wanted to experiment with a more interactive human-computer interface where a physical output can respond to face direction in real time.",
+      "approach": "The system uses OpenCV to read webcam frames and MediaPipe Face Mesh to detect facial landmarks. The nose-tip x-position is compared against left and right threshold zones. Based on that position, Python sends a single-character command over serial communication: L for left, R for right, and C for center. The Arduino reads the command and updates the LED states on the assigned output pins.",
+      "features": [
+        "Real-time webcam-based face tracking",
+        "MediaPipe Face Mesh landmark detection",
+        "Nose-position threshold logic for left, right, and center states",
+        "Python-to-Arduino serial communication",
+        "Arduino LED control using C/C++ sketch logic",
+        "Simple visual feedback overlay with threshold guide lines",
+        "Public GitHub repository and short output demo video"
+      ],
+      "tech": [
+        "Python",
+        "OpenCV",
+        "MediaPipe",
+        "PySerial",
+        "Arduino",
+        "C/C++",
+        "Computer Vision",
+        "Embedded Systems"
+      ],
+      "architecture": [
+        "Webcam input",
+        "OpenCV frame processing",
+        "MediaPipe Face Mesh detection",
+        "Nose-position threshold decision",
+        "Serial command transfer",
+        "Arduino command reading",
+        "LED output control"
+      ],
+      "links": {
+        "github": "https://github.com/adt-13/face-controlled-led-arduino.git",
+        "demo": "https://drive.google.com/file/d/1x9tPIPKZ6ze6CG9-wntMrs3BhoEG_BEJ/view?usp=drive_link"
+      },
+      "caseStudy": {
+        "overview": "This project is a compact but strong example of combining computer vision with embedded hardware. It shows how a software-based vision model can control a real-world Arduino circuit through serial communication.",
+        "sourceNotice": "Public source code is available on GitHub. A short output demo video is available through Google Drive.",
+        "sections": [
+          {
+            "title": "How It Works",
+            "body": "The Python script opens the webcam, flips the frame for natural interaction, detects the face mesh, and reads the nose-tip coordinate. If the nose moves to the left side of the threshold, the script sends L. If it moves to the right side, it sends R. If the face is centered, it sends C. The Arduino sketch receives the command and switches the LEDs accordingly."
+          },
+          {
+            "title": "Why This Project Matters",
+            "body": "Although the prototype is small, it demonstrates an important system-building idea: AI or computer-vision logic does not have to stay inside software. It can become an input layer for physical devices, robotics interfaces, assistive systems, and interactive hardware experiments."
+          },
+          {
+            "title": "Engineering Focus",
+            "body": "The project connects three layers: real-time vision processing, serial communication, and microcontroller output control. That makes it more valuable for a portfolio than a basic LED blink project because it shows integration across software and hardware."
+          }
+        ],
+        "nextSteps": [
+          "Add more gesture states such as up, down, blink, or mouth-open control",
+          "Improve calibration so the threshold adapts to each user's face position",
+          "Add a small desktop UI for selecting COM port and sensitivity",
+          "Expand the output from LEDs to motors, servos, or robotic movement",
+          "Record a clearer portfolio demo with the camera feed and circuit visible together"
+        ]
+      }
+    },
+    {
+      "slug": "personal-book-catalog-system",
+      "title": "Personal Book Catalog System",
+      "shortTitle": "Personal Book Catalog System",
+      "type": "Full-Stack Practice Project",
+      "status": "In Development",
+      "visibilityType": "practice",
+      "description": "A personal book catalog system for tracking reading history, book covers, dates, ratings, descriptions, favorite lines, and quotes.",
+      "role": "I am planning database models, API structure, CRUD workflows, and frontend interface for a product-oriented full-stack project.",
+      "problem": "Readers often want a simple personal system to track books, notes, quotes, ratings, and reflections in one place.",
+      "approach": "The project is planned as a practical full-stack CRUD application with React, FastAPI, PostgreSQL, and a clean user interface.",
+      "features": [
+        "Book and reading-status management",
+        "Ratings, notes, quotes, and reflections",
+        "CRUD operations and database design",
+        "Future potential for community sharing and recommendations"
+      ],
+      "tech": [
+        "React",
+        "FastAPI",
+        "CSS",
+        "PostgreSQL",
+        "Python"
+      ],
+      "caseStudy": {
+        "sourceNotice": "In-development project."
+      }
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming & CS",
+      "items": [
+        "Python",
+        "C++",
+        "JavaScript",
+        "SQL",
+        "HTML",
+        "CSS",
+        "Data Structures",
+        "Algorithms",
+        "OOP",
+        "System Design"
+      ]
+    },
+    {
+      "category": "AI / ML",
+      "items": [
+        "Machine Learning",
+        "Deep Learning",
+        "ANN",
+        "SNN",
+        "Classification",
+        "Regression",
+        "Model Evaluation",
+        "Feature Engineering",
+        "ECG Signal Classification",
+        "Recommendation Systems",
+        "Computer Vision",
+        "TF-IDF",
+        "Cosine Similarity"
+      ]
+    },
+    {
+      "category": "Full-Stack Development",
+      "items": [
+        "React",
+        "FastAPI",
+        "REST API Development",
+        "Database Integration",
+        "PostgreSQL",
+        "UI Development"
+      ]
+    },
+    {
+      "category": "Embedded AI & Tools",
+      "items": [
+        "ESP32-S3",
+        "ESP32-CAM",
+        "Arduino",
+        "Edge AI Concepts",
+        "Motion Control",
+        "Sensor-Based Systems",
+        "Git",
+        "GitHub",
+        "Linux",
+        "VS Code",
+        "Jupyter Notebook"
+      ]
+    }
+  ],
+  "education": {
+    "degree": "B.Sc. in Computer Science and Engineering",
+    "institution": "Daffodil International University, Birulia, Savar, Dhaka",
+    "timeline": "July 2022 - September 2026 (Expected)",
+    "coursework": [
+      "Data Structures and Algorithms",
+      "Machine Learning",
+      "Deep Learning",
+      "Linear Algebra",
+      "Calculus",
+      "Database Systems",
+      "Software Engineering",
+      "Embedded Systems"
+    ]
+  },
+  "researchInterests": [
+    "Embedded AI",
+    "Edge Machine Learning",
+    "Biomedical Signal Processing",
+    "ECG-Based Arrhythmia Detection",
+    "Artificial Neural Networks",
+    "Spiking Neural Networks",
+    "ESP32-S3 Deployment",
+    "AI Systems Design"
+  ]
+};
